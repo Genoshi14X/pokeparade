@@ -22,28 +22,35 @@ function openCatalog(id?: string) {
   $('catalog-title').textContent = player ? `Покемон для ${player.name}` : 'Выбери покемона';
   $('catalog-hint').textContent = player ? 'Нажми на покемона — персонаж на сцене сразу изменится.' : 'Нажми на покемона, чтобы получить команду для чата.';
   document.querySelector<HTMLElement>('.catalog-command-row')!.hidden = !!id;
-  $<HTMLInputElement>('catalog-search').value = ''; renderCatalog(); filterCatalog(); catalogDialog.showModal();
+  $<HTMLInputElement>('catalog-search').value = '';
+  $<HTMLSelectElement>('catalog-generation').value = 'all'; $<HTMLSelectElement>('catalog-variant').value = 'normal';
+  renderCatalog(); filterCatalog(); catalogDialog.showModal();
 }
 function filterCatalog() {
   const search = $<HTMLInputElement>('catalog-search').value.trim().toLowerCase().replace(/^#/, '');
+  const generation = $<HTMLSelectElement>('catalog-generation').value;
+  const variant = $<HTMLSelectElement>('catalog-variant').value;
   let count = 0;
   for (const item of Array.from($('catalog-grid').children)) {
     const button = item as HTMLButtonElement;
-    button.hidden = /^\d+$/.test(search) ? Number(button.dataset.dex) !== Number(search) : !button.dataset.search!.includes(search);
+    const matchesSearch = /^\d+$/.test(search) ? Number(button.dataset.dex) === Number(search) : button.dataset.search!.includes(search);
+    button.hidden = !matchesSearch || (generation !== 'all' && button.dataset.generation !== generation) || (variant !== 'all' && button.dataset.shiny !== String(variant === 'shiny'));
     if (!button.hidden) count++;
   }
   $('catalog-empty').hidden = count > 0;
 }
 function renderCatalog() {
   if (!state) return;
-  const key = JSON.stringify(state.skins.map(s => [s.id, s.name, s.preview]));
+  const key = JSON.stringify(state.skins.map(s => [s.id, s.name, s.preview, s.generation, s.shiny]));
   if (catalogKey === key) return;
   catalogKey = key; const grid = $('catalog-grid'); grid.replaceChildren();
   for (const skin of state.skins) {
     const button = document.createElement('button'); button.className = 'catalog-item'; button.type = 'button'; button.setAttribute('aria-pressed', 'false');
     button.dataset.search = `${skin.id} ${skin.name}`.toLowerCase(); button.dataset.dex = String(skin.dexNumber || '');
+    button.dataset.generation = String(skin.generation || ''); button.dataset.shiny = String(!!skin.shiny);
+    button.classList.toggle('shiny', !!skin.shiny);
     if (skin.preview) { const image = document.createElement('img'); image.src = skin.preview; image.alt = ''; image.loading = 'lazy'; button.append(image); }
-    const number = document.createElement('small'); number.textContent = skin.dexNumber ? `#${String(skin.dexNumber).padStart(3, '0')}` : skin.id;
+    const number = document.createElement('small'); number.textContent = (skin.dexNumber ? `#${String(skin.dexNumber).padStart(3, '0')}` : skin.id) + (skin.shiny ? ' · SHINY' : '');
     const name = document.createElement('strong'); name.textContent = skin.name;
     button.append(number, name);
     button.onclick = async () => {
@@ -54,7 +61,8 @@ function renderCatalog() {
         catch (error) { toast(error instanceof Error ? error.message : 'Не удалось сменить покемона. Повтори выбор.', true); }
         finally { choosing = false; button.disabled = false; }
       } else {
-        $<HTMLInputElement>('catalog-command').value = `!skin ${skin.id}`;
+        $<HTMLInputElement>('catalog-command').value = `!skin ${skin.dexNumber || skin.id}`;
+        $('catalog-hint').textContent = skin.shiny ? 'Shiny может выпасть по команде с номером. Результат зависит от шанса в настройках сцены.' : 'Скопируй команду в чат. При выборе по номеру есть шанс получить shiny.';
         for (const card of Array.from(grid.children)) card.setAttribute('aria-pressed', String(card === button));
       }
     };
@@ -64,6 +72,8 @@ function renderCatalog() {
 $('open-catalog').addEventListener('click', () => openCatalog());
 $('close-catalog').addEventListener('click', () => catalogDialog.close());
 $('catalog-search').addEventListener('input', filterCatalog);
+$('catalog-generation').addEventListener('change', filterCatalog);
+$('catalog-variant').addEventListener('change', filterCatalog);
 action('copy-skin-command', async () => {
   const input = $<HTMLInputElement>('catalog-command');
   try { await navigator.clipboard.writeText(input.value); toast('Команда скопирована. Её можно отправить в чат Twitch.'); }
@@ -117,9 +127,11 @@ $('twitch-form').addEventListener('submit', async event => {
 
 function settingLabels() {
   for (const id of ['size', 'speed', 'bottom']) $(id + '-output').textContent = $<HTMLInputElement>(id).value + (id === 'speed' ? '' : ' px');
+  const odds = Number($<HTMLInputElement>('shinyOdds').value);
+  $('shiny-chance').textContent = odds > 0 ? `1 из ${odds} (${(100 / odds).toLocaleString('ru-RU', { maximumFractionDigits: 2 })} %). Только для !skin число.` : 'Случайные shiny отключены.';
 }
 function readSettings(): Settings {
-  return { size: Number($<HTMLInputElement>('size').value), speed: Number($<HTMLInputElement>('speed').value), bottom: Number($<HTMLInputElement>('bottom').value), names: $<HTMLInputElement>('names').checked, autoJoin: $<HTMLInputElement>('autoJoin').checked, idleMinutes: Number($<HTMLSelectElement>('idleMinutes').value), fps: Number($<HTMLSelectElement>('fps').value) };
+  return { size: Number($<HTMLInputElement>('size').value), speed: Number($<HTMLInputElement>('speed').value), bottom: Number($<HTMLInputElement>('bottom').value), names: $<HTMLInputElement>('names').checked, autoJoin: $<HTMLInputElement>('autoJoin').checked, idleMinutes: Number($<HTMLSelectElement>('idleMinutes').value), fps: Number($<HTMLSelectElement>('fps').value), shinyOdds: Number($<HTMLInputElement>('shinyOdds').value) };
 }
 let pendingSettings: Settings | undefined;
 async function saveSettings() {
@@ -141,7 +153,7 @@ function renderPlayers(next: State) {
   const list = $('player-list'); list.replaceChildren();
   for (const p of next.players) {
     const skin = next.skins.find(s => s.id === p.skin);
-    const item = document.createElement('div'); item.className = 'player';
+    const item = document.createElement('div'); item.className = `player${skin?.shiny ? ' shiny' : ''}`;
     const face = document.createElement('button'); face.type = 'button'; face.className = 'player-face'; face.style.setProperty('--skin', skin?.color || '#b3ed85');
     face.title = `Сменить персонажа для ${p.name}`; face.setAttribute('aria-label', face.title); face.onclick = () => openCatalog(p.id);
     if (skin?.preview) { const image = document.createElement('img'); image.src = skin.preview; image.alt = skin.name; face.append(image); face.classList.add('pokemon-face'); }
@@ -187,8 +199,10 @@ function render(next: State) {
       if (typeof value === 'boolean') input.checked = value; else input.value = String(value);
     }
     if (twitch.clientId) $<HTMLInputElement>('client-id').value = twitch.clientId;
-    const command = document.querySelector('.commands-bar>div:last-child code'); if (command) command.textContent = next.skins.some(s => s.id === 'pikachu') ? '!skin pikachu' : `!skin 1–${next.skins.length}`;
-    $('catalog-description').textContent = `В каталоге: ${next.skins.length}. Нажми на портрет участника, чтобы сменить его персонажа.`;
+    const command = document.querySelector('.commands-bar>div:last-child code'); if (command) command.textContent = next.skins.some(s => s.id === 'pikachu') ? '!skin 25' : `!skin 1–${next.skins.length}`;
+    const regularCount = next.skins.filter(s => !s.shiny).length;
+    const shinyCount = next.skins.filter(s => s.shiny).length;
+    $('catalog-description').textContent = `${regularCount} покемона · ${shinyCount} shiny. Нажми на портрет участника, чтобы сменить его персонажа.`;
     settingLabels();
   }
   renderPlayers(next);

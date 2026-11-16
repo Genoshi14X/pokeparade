@@ -43,14 +43,27 @@ try {
   await page.locator('#server-status').filter({ hasText: 'Приложение запущено' }).waitFor();
   assert.equal(await page.locator('#count').innerText(), '0');
   const initial = await (await fetch(`${origin}/api/state`)).json();
-  assert.equal(initial.skins.length, 151);
+  assert.equal(initial.skins.length, 986);
   assert.equal(initial.skins[24].id, 'pikachu');
   await page.click('#open-catalog');
+  await page.locator('#catalog-generation').selectOption('2');
+  assert.equal(await page.locator('.catalog-item:not([hidden])').count(), 100);
+  await page.locator('#catalog-generation').selectOption('3');
+  assert.equal(await page.locator('.catalog-item:not([hidden])').count(), 135);
+  await page.locator('#catalog-generation').selectOption('4');
+  assert.equal(await page.locator('.catalog-item:not([hidden])').count(), 107);
+  await page.locator('#catalog-variant').selectOption('shiny');
+  assert.equal(await page.locator('.catalog-item:not([hidden])').count(), 107);
+  await page.locator('#catalog-search').fill('493');
+  await page.locator('.catalog-item:not([hidden])').filter({ hasText: 'Arceus' }).waitFor();
+  await page.screenshot({ path: 'test-results/shiny-catalog.png', fullPage: true });
+  await page.locator('#catalog-generation').selectOption('all');
+  await page.locator('#catalog-variant').selectOption('normal');
   await page.locator('#catalog-search').fill('25');
   await page.locator('.catalog-item:not([hidden])').filter({ hasText: 'Pikachu' }).waitFor();
   assert.equal(await page.locator('.catalog-item:not([hidden])').count(), 1);
   await page.locator('.catalog-item:not([hidden])').click();
-  assert.equal(await page.locator('#catalog-command').inputValue(), '!skin pikachu');
+  assert.equal(await page.locator('#catalog-command').inputValue(), '!skin 25');
   await page.screenshot({ path: 'test-results/pokemon-catalog.png', fullPage: true });
   await page.click('#close-catalog');
   await page.screenshot({ path: 'test-results/empty.png', fullPage: true });
@@ -60,6 +73,16 @@ try {
   await preview.locator('canvas').waitFor();
   const frame = page.frames().find(frame => frame.url().includes('/overlay'));
   await frame.waitForFunction(() => window.__stage?.avatars.size === 5);
+  // Admins can assign a shiny from the catalog; the image and rarity marker must load.
+  await page.locator('.player-face').first().click();
+  await page.locator('#catalog-generation').selectOption('4');
+  await page.locator('#catalog-variant').selectOption('shiny');
+  await page.locator('#catalog-search').fill('493');
+  await page.locator('.catalog-item:not([hidden])').click();
+  await frame.waitForFunction(() => window.__stage.avatars.get('demo:1').skin === 'arceus-shiny');
+  await frame.waitForFunction(() => window.__stage.avatars.get('demo:1').label.text.includes('✦'));
+  assert.ok(await frame.evaluate(() => window.__stage.avatars.get('demo:1').frames.idle.textures.length > 1));
+  await page.screenshot({ path: 'test-results/shiny-stage.png', fullPage: true });
   await page.locator('.player-face').first().click();
   await page.locator('#catalog-search').fill('pikachu');
   await page.locator('.catalog-item:not([hidden])').click();
@@ -127,8 +150,9 @@ try {
   await overlay.waitForFunction(() => window.__stage.avatars.size === 39);
   await page.locator('#size').evaluate(input => { input.value = '96'; input.dispatchEvent(new Event('input', { bubbles: true })); });
   await page.locator('#names').uncheck();
+  await page.locator('#shinyOdds').fill('64');
   await page.waitForFunction(() => document.querySelector('#save-note').textContent === 'Настройки сохранены');
-  await overlay.waitForFunction(() => window.__stage.getState().settings.size === 96 && !window.__stage.getState().settings.names);
+  await overlay.waitForFunction(() => window.__stage.getState().settings.size === 96 && !window.__stage.getState().settings.names && window.__stage.getState().settings.shinyOdds === 64);
   assert.equal((await fetch(`${origin}/api/clear`, { method: 'POST', headers: { Origin: 'https://foreign.example', 'Content-Type': 'application/json' }, body: '{}' })).status, 403);
   assert.equal((await fetch(`${origin}/.data/twitch.json`)).status, 404);
   const snapshot = await (await fetch(`${origin}/api/state`)).json();
@@ -142,9 +166,10 @@ try {
   await stopServer(); await launchServer();
   const restored = await (await fetch(`${origin}/api/state`)).json();
   assert.equal(restored.settings.size, 96); assert.equal(restored.settings.names, false); assert.equal(restored.players.length, 0);
+  assert.equal(restored.settings.shinyOdds, 64);
   assert.deepEqual(errors, []);
   assert.deepEqual(spriteErrors, []);
-  console.log('Browser checks passed: Pokémon catalog/search, selection, real animation frames and pause, 40 avatars, walk, dance, source reload, transparency, removal, settings persistence, request origins, mobile layout.');
+  console.log('Browser checks passed: generations I–IV filters, shiny catalog/selection/marker, saved shiny odds, real animation frames and pause, 40 avatars, walk, dance, source reload, transparency, removal, settings persistence, request origins, mobile layout.');
   console.log('Screenshots: test-results/stage.png, forty.png, overlay.png, mobile.png');
 } catch (error) { console.error(output); throw error; }
 finally { await browser?.close(); await stopServer(); await rm(dataDir, { recursive: true, force: true }); }

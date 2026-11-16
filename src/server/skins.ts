@@ -11,6 +11,8 @@ export function validateSkins(value: unknown): Skin[] {
     return typeof s.id === 'string' && /^[a-z0-9_-]{1,40}$/.test(s.id) && typeof s.name === 'string' && s.name.length > 0 && s.name.length <= 40 &&
       imagePath(s.image) && (s.preview === undefined || imagePath(s.preview)) &&
       (s.dexNumber === undefined || (Number.isInteger(s.dexNumber) && s.dexNumber > 0 && s.dexNumber <= 1025)) &&
+      (s.generation === undefined || (Number.isInteger(s.generation) && s.generation >= 1 && s.generation <= 9)) &&
+      (s.shiny === undefined || typeof s.shiny === 'boolean') &&
       (s.facing === undefined || s.facing === 'left' || s.facing === 'right') &&
       [s.frameWidth, s.frameHeight, s.columns, s.rows].every(v => Number.isInteger(v) && v! > 0 && v! <= 4096) &&
       s.frameWidth! * s.columns! <= 8192 && s.frameHeight! * s.rows! <= 8192 &&
@@ -18,7 +20,7 @@ export function validateSkins(value: unknown): Skin[] {
       animations && animations.length > 0 && animations.every(frames => Array.isArray(frames) && frames.length > 0 && frames.length <= 4096 && frames.every(f => Number.isInteger(f) && f >= 0 && f < count)) &&
       (s.frameDurations === undefined || (Array.isArray(s.frameDurations) && s.frameDurations.length > 0 && s.frameDurations.length <= count && s.frameDurations.every(ms => Number.isFinite(ms) && ms >= 10 && ms <= 60000) && animations.every(frames => frames!.every(f => f < s.frameDurations!.length))));
   });
-  const numbers = skins.filter(s => s?.dexNumber !== undefined).map(s => s.dexNumber);
+  const numbers = skins.filter(s => s?.dexNumber !== undefined).map(s => `${s.dexNumber}:${s.shiny === true}`);
   if (!valid || new Set(skins.map(s => s.id)).size !== skins.length || new Set(numbers).size !== numbers.length) throw new Error('Invalid sprite manifest');
   return skins;
 }

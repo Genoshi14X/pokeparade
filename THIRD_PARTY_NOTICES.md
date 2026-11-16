@@ -2,8 +2,8 @@
 
 Source repository: https://github.com/PokeAPI/sprites
 
-This application includes Pokémon #001–#151 from the repository's
-`sprites/pokemon/versions/generation-v/black-white/animated/` directory.
+This application includes Pokémon #001–#493 (generations I–IV), both regular and shiny variants from the repository's
+`sprites/pokemon/versions/generation-v/black-white/animated/` and `animated/shiny/` directories.
 Original GIFs are converted to transparent PNG atlases without redrawing or resizing
 the artwork. Frame order, GIF compositing, and frame durations are preserved.
 Transparent margins are cropped consistently across all frames of each character.

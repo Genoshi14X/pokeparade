@@ -111,7 +111,8 @@ async function start() {
       sprite.y = y;
       root.x += (p.x - root.x) * Math.min(1, ticker.deltaMS / 1000 * 18);
       root.y = HEIGHT - bottom - p.lane * size * .4; root.zIndex = root.y;
-      label.text = p.name; label.visible = names; label.y = -size - 9 + y;
+      const shiny = latest.skins.find(s => s.id === avatar.skin)?.shiny;
+      label.text = p.name + (shiny ? ' ✦' : ''); label.style.fill = shiny ? '#ffe49a' : '#ffffff'; label.visible = names; label.y = -size - 9 + y;
     }
   });
   // No UI is drawn on the OBS layer when the local server reconnects.

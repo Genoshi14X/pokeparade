@@ -23,13 +23,16 @@ export class Scene {
       return 'queued';
     }
     const saved = this.profiles[id]?.skin;
-    const skin = this.skins.find(s => s.id === saved)?.id ?? this.skins[Math.floor(this.random() * this.skins.length)].id;
+    const regular = this.skins.filter(s => !s.shiny);
+    const choices = regular.length ? regular : this.skins;
+    const skin = this.skins.find(s => s.id === saved)?.id ?? choices[Math.floor(this.random() * choices.length)].id;
     this.players.set(id, { id, name: name.slice(0, 30), skin, x: 60 + this.random() * (WIDTH - 120), lane: Math.floor(this.random() * 3), direction: this.random() > .5 ? 1 : -1, action: 'idle', until: this.time + 1 + this.random() * 3, lastActive: Date.now(), demo });
     if (!demo) { this.profiles[id] = { skin, name }; this.onPersist(); }
     this.revision++; return 'joined';
   }
   leave(id: string) {
-    this.players.delete(id); this.queue.delete(id); this.cooldowns.delete(id);
+    // A leave/join cycle must not bypass the short cooldown on shiny attempts.
+    this.players.delete(id); this.queue.delete(id);
     this.promote(); this.revision++;
   }
   promote() {
@@ -50,12 +53,20 @@ export class Scene {
       this.join(`demo:${id}`, `${names[(id - 1) % names.length]}${id > 10 ? `_${id}` : ''}`, true);
     }
   }
-  setSkin(id: string, selection: string): boolean {
+  setSkin(id: string, selection: string, fromChat = false): boolean {
     const player = this.players.get(id);
     const key = selection.trim().toLowerCase();
-    const skin = this.skins.find(s => s.id === key || s.name.toLowerCase() === key) ??
-      this.skins.find(s => s.dexNumber === Number(key)) ?? this.skins[Number(key) - 1];
+    const numeric = /^\d+$/.test(key);
+    let skin = this.skins.find(s => s.id === key || s.name.toLowerCase() === key) ??
+      this.skins.find(s => !s.shiny && s.dexNumber === Number(key)) ??
+      (!this.skins.some(s => s.dexNumber !== undefined) ? this.skins[Number(key) - 1] : undefined);
     if (!player || !skin) return false;
+    // Only a valid numeric chat command rolls for shiny. Admins can select either variant.
+    if (fromChat && skin.shiny) return false;
+    if (fromChat && numeric && skin.dexNumber && this.settings.shinyOdds > 0) {
+      const shiny = this.skins.find(s => s.shiny && s.dexNumber === skin!.dexNumber);
+      if (shiny && this.random() < 1 / this.settings.shinyOdds) skin = shiny;
+    }
     player.skin = skin.id;
     if (!player.demo) { this.profiles[id] = { name: player.name, skin: skin.id }; this.onPersist(); }
     this.revision++; return true;
@@ -70,7 +81,7 @@ export class Scene {
     if (!['!jump', '!dance', '!skin'].includes(command)) return;
     if ((this.cooldowns.get(id) ?? 0) > Date.now()) return;
     if (command === '!skin') {
-      if (!argument || !this.setSkin(id, argument)) return;
+      if (!argument || !this.setSkin(id, argument, true)) return;
     } else {
       player.action = command === '!jump' ? 'jump' : 'dance';
       player.until = this.time + (player.action === 'jump' ? .9 : 3);
@@ -78,7 +89,7 @@ export class Scene {
     this.cooldowns.set(id, Date.now() + 2500); this.revision++;
   }
   updateSettings(input: Partial<Settings>) {
-    for (const [key, min, max] of [['size', 36, 120], ['bottom', 0, 500], ['speed', 15, 180], ['idleMinutes', 0, 240]] as const) {
+    for (const [key, min, max] of [['size', 36, 120], ['bottom', 0, 500], ['speed', 15, 180], ['idleMinutes', 0, 240], ['shinyOdds', 0, 8192]] as const) {
       if (typeof input[key] === 'number' && Number.isFinite(input[key])) this.settings[key] = Math.round(Math.min(max, Math.max(min, input[key]!)));
     }
     for (const key of ['names', 'autoJoin'] as const) if (typeof input[key] === 'boolean') this.settings[key] = input[key]!;
@@ -87,6 +98,7 @@ export class Scene {
   }
   tick(dt: number, now = Date.now()) {
     // Inactivity is real time; animation time stops while the scene is paused.
+    for (const [id, until] of this.cooldowns) if (until <= now) this.cooldowns.delete(id);
     for (const [id, p] of this.players) {
       if (!p.demo && this.settings.idleMinutes > 0 && now - p.lastActive > this.settings.idleMinutes * 60_000) this.leave(id);
     }
