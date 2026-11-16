@@ -1,0 +1,1215 @@
+{
+  "repository": "https://github.com/PokeAPI/sprites",
+  "spritesCommit": "c0542f7c51215d9672439012838c99f520596cbd",
+  "dataCommit": "8a92bfa7dab2f12b84b5d151562f9857c133ff30",
+  "assets": [
+    {
+      "dexNumber": 1,
+      "id": "bulbasaur",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/1.gif",
+      "sourceSha256": "354f4e74e6c3dfe5acfc0758707c07d0792ef592791d05a43dfddec13f34cb93",
+      "frames": 49,
+      "durationMs": 5200
+    },
+    {
+      "dexNumber": 2,
+      "id": "ivysaur",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/2.gif",
+      "sourceSha256": "7face7e34efaf0ead39466cc383998954e5ebae4041e538d592380c2561255fa",
+      "frames": 55,
+      "durationMs": 5700
+    },
+    {
+      "dexNumber": 3,
+      "id": "venusaur",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/3.gif",
+      "sourceSha256": "a93402714a0e8f5ee92a1b995c5e9f3a02034037efebc9c99b2f2b18cc03a4a3",
+      "frames": 85,
+      "durationMs": 10300
+    },
+    {
+      "dexNumber": 4,
+      "id": "charmander",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/4.gif",
+      "sourceSha256": "d5d898807fb61c5eadeecf71a023b543cc7740e72c833bec5491efbe1eecb0c2",
+      "frames": 54,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 5,
+      "id": "charmeleon",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/5.gif",
+      "sourceSha256": "645b92eebf8c8ddb09de8eefaf3e9e8b3a73fbd2947640665775f5d634396840",
+      "frames": 45,
+      "durationMs": 4700
+    },
+    {
+      "dexNumber": 6,
+      "id": "charizard",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/6.gif",
+      "sourceSha256": "249c2b1d43cd5e3a00e7029b007aabef7559065c84ae8826a775614c42356c6a",
+      "frames": 71,
+      "durationMs": 7300
+    },
+    {
+      "dexNumber": 7,
+      "id": "squirtle",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/7.gif",
+      "sourceSha256": "cfb2c0799c062c09baf49ca8cd946c4a53bb42147ed6cc811b8879281c79aa30",
+      "frames": 24,
+      "durationMs": 3500
+    },
+    {
+      "dexNumber": 8,
+      "id": "wartortle",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/8.gif",
+      "sourceSha256": "2a0886ef0d6c89946e2862c06e00cdae270d42675d5519fbae71fec613de10a3",
+      "frames": 43,
+      "durationMs": 4500
+    },
+    {
+      "dexNumber": 9,
+      "id": "blastoise",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/9.gif",
+      "sourceSha256": "e162c02d4df892f8f659bf31b1dc442facbb1ba5ddc94f24093b6b4af9a1eddd",
+      "frames": 120,
+      "durationMs": 12400
+    },
+    {
+      "dexNumber": 10,
+      "id": "caterpie",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/10.gif",
+      "sourceSha256": "4ff41532fc21b13d9834199f5425c75bc13cdcd05a857475e1912cbad5d4923e",
+      "frames": 41,
+      "durationMs": 4600
+    },
+    {
+      "dexNumber": 11,
+      "id": "metapod",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/11.gif",
+      "sourceSha256": "95023fe8b6945a419f3aea440914820147470834ed7a41f1888e385fd8f9b5d2",
+      "frames": 55,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 12,
+      "id": "butterfree",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/12.gif",
+      "sourceSha256": "79bed2c17b9aa9dcb983b1fbbb072e38ce3ae3d3f40379948d27f23151eba73a",
+      "frames": 45,
+      "durationMs": 4800
+    },
+    {
+      "dexNumber": 13,
+      "id": "weedle",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/13.gif",
+      "sourceSha256": "479605a6f7b0b505923b287ab81652e499d51af7a1d5671e7ad643364616d81e",
+      "frames": 64,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 14,
+      "id": "kakuna",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/14.gif",
+      "sourceSha256": "d82f616a2e161c846cfc5bbc4443de4f0418372ff3cb0389e9929586c85e45c2",
+      "frames": 40,
+      "durationMs": 5000
+    },
+    {
+      "dexNumber": 15,
+      "id": "beedrill",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/15.gif",
+      "sourceSha256": "63115a8c298bbe1dcfbd9602bf419e5a0d80e1c2ed10a15bfbbd570840f4f41c",
+      "frames": 36,
+      "durationMs": 3600
+    },
+    {
+      "dexNumber": 16,
+      "id": "pidgey",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/16.gif",
+      "sourceSha256": "549d21fbd82ffe6734d3727608cf9659955a7eec49fe4511d5b58d62e77fd595",
+      "frames": 22,
+      "durationMs": 4900
+    },
+    {
+      "dexNumber": 17,
+      "id": "pidgeotto",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/17.gif",
+      "sourceSha256": "70892c23cf1c3938ff555cfadcd73506c07aebeb07ab5bfc3fdd520e1a2a8723",
+      "frames": 18,
+      "durationMs": 1800
+    },
+    {
+      "dexNumber": 18,
+      "id": "pidgeot",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/18.gif",
+      "sourceSha256": "303e4f4a7fbeb2492dacc22261f9eef5b274ee6abae9ea91e74bf73b9151eeb2",
+      "frames": 36,
+      "durationMs": 4200
+    },
+    {
+      "dexNumber": 19,
+      "id": "rattata",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/19.gif",
+      "sourceSha256": "1715a37dccd2d12fb12c376b7dc3447478aa8e022fcbd7273709b675f135c225",
+      "frames": 50,
+      "durationMs": 5400
+    },
+    {
+      "dexNumber": 20,
+      "id": "raticate",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/20.gif",
+      "sourceSha256": "98130dcbd350306f94e395010f4b5fdb9e66c06e4b71d247db02d3ea95bc5613",
+      "frames": 60,
+      "durationMs": 6100
+    },
+    {
+      "dexNumber": 21,
+      "id": "spearow",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/21.gif",
+      "sourceSha256": "8f14cc7f434c89ba5994f80e61c4790f32605fbbf9beb9c42844c2fb9af48b16",
+      "frames": 51,
+      "durationMs": 5400
+    },
+    {
+      "dexNumber": 22,
+      "id": "fearow",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/22.gif",
+      "sourceSha256": "b7cdd70bdac6ab8c7e101d5899b3a3a8b9e845412c4d1b7b578232a541bad82d",
+      "frames": 11,
+      "durationMs": 1050
+    },
+    {
+      "dexNumber": 23,
+      "id": "ekans",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/23.gif",
+      "sourceSha256": "d15097b7c898ac9b82602cadd38efcb7b12658919e18148dc56f0aae3ccfe699",
+      "frames": 38,
+      "durationMs": 3800
+    },
+    {
+      "dexNumber": 24,
+      "id": "arbok",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/24.gif",
+      "sourceSha256": "8a3412c624fcd1cecd2333b47f617cea8cae66701fa55a0ad0efee33056d9c71",
+      "frames": 38,
+      "durationMs": 4000
+    },
+    {
+      "dexNumber": 25,
+      "id": "pikachu",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/25.gif",
+      "sourceSha256": "0ddc94c6f8cd432e3fd8972b4eca2a7b72fbfaf130c1970726089feb6fdbacc0",
+      "frames": 55,
+      "durationMs": 6000
+    },
+    {
+      "dexNumber": 26,
+      "id": "raichu",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/26.gif",
+      "sourceSha256": "46512e7fa6cab519fe0ebd2ceb6625cbb6df8d523bf87553b594a91a2fb6babc",
+      "frames": 84,
+      "durationMs": 8900
+    },
+    {
+      "dexNumber": 27,
+      "id": "sandshrew",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/27.gif",
+      "sourceSha256": "4623aaa8f060eb1501d4de37665486c936507d8a8d6dafe72a09079faed5e846",
+      "frames": 56,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 28,
+      "id": "sandslash",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/28.gif",
+      "sourceSha256": "30f9dd7f66f58af5b55546447caa3fb9d6a88c995dcb5609607ff5f31b3ba672",
+      "frames": 56,
+      "durationMs": 5800
+    },
+    {
+      "dexNumber": 29,
+      "id": "nidoran-f",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/29.gif",
+      "sourceSha256": "16eab41f2107ff89b44df025a39a2fb16c2bea9459e7acc9cf5322092a8ea336",
+      "frames": 46,
+      "durationMs": 8600
+    },
+    {
+      "dexNumber": 30,
+      "id": "nidorina",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/30.gif",
+      "sourceSha256": "148cc706ef23379e6e23d76347034a6ac3642652dbe05382d7af34003f485b04",
+      "frames": 25,
+      "durationMs": 2800
+    },
+    {
+      "dexNumber": 31,
+      "id": "nidoqueen",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/31.gif",
+      "sourceSha256": "f4c26930d359d0936286dbfddde8eff741f1727ecb82a36ec93cdb2b8d2e9afe",
+      "frames": 63,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 32,
+      "id": "nidoran-m",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/32.gif",
+      "sourceSha256": "423918549a31913432839e1434e89e62c5d992bbf943f18eca4fef40ee0970bf",
+      "frames": 61,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 33,
+      "id": "nidorino",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/33.gif",
+      "sourceSha256": "84a1fe563fda96346cedd8177a93c8fe4b34dcbed36718cfb04054469fe8e3f9",
+      "frames": 50,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 34,
+      "id": "nidoking",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/34.gif",
+      "sourceSha256": "1faad895ed00059d04d941f3cb1062cf4193ab61992c6a14d011259caebbedf5",
+      "frames": 58,
+      "durationMs": 7700
+    },
+    {
+      "dexNumber": 35,
+      "id": "clefairy",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/35.gif",
+      "sourceSha256": "3a57c716e472b556e39ba89b93a6ee77127678b25d53a9f6f704982dca400481",
+      "frames": 68,
+      "durationMs": 6900
+    },
+    {
+      "dexNumber": 36,
+      "id": "clefable",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/36.gif",
+      "sourceSha256": "88b875b80e10e4b027da553d45bc8de44de7cdd17a60ceb52aa39497aee3b260",
+      "frames": 52,
+      "durationMs": 5200
+    },
+    {
+      "dexNumber": 37,
+      "id": "vulpix",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/37.gif",
+      "sourceSha256": "53e08a02b8c1efce5b339607da95b4d2f4db4c91fcd54a275f78130e5766543c",
+      "frames": 46,
+      "durationMs": 4700
+    },
+    {
+      "dexNumber": 38,
+      "id": "ninetales",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/38.gif",
+      "sourceSha256": "ae06aa67222c99af707931807823456c6c140fe736eebd5dbca1e3160c2551f6",
+      "frames": 26,
+      "durationMs": 2800
+    },
+    {
+      "dexNumber": 39,
+      "id": "jigglypuff",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/39.gif",
+      "sourceSha256": "1947a75df2196688cab284c712ef4cb940565ed646f5c1101844cde610de5614",
+      "frames": 57,
+      "durationMs": 6300
+    },
+    {
+      "dexNumber": 40,
+      "id": "wigglytuff",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/40.gif",
+      "sourceSha256": "9d4785904e75feeda4b01464017e68ecbf750e646c954feb551c46df50524bd6",
+      "frames": 56,
+      "durationMs": 6400
+    },
+    {
+      "dexNumber": 41,
+      "id": "zubat",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/41.gif",
+      "sourceSha256": "87549d298eb48231fe9cbd036455a67bf59786be4ebb25c82a2a5a3173c10401",
+      "frames": 55,
+      "durationMs": 2750
+    },
+    {
+      "dexNumber": 42,
+      "id": "golbat",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/42.gif",
+      "sourceSha256": "a32dcf01efe210aa20bee2cf96d1c8bacfb4351fd16ea4b249a6e144d4d09887",
+      "frames": 16,
+      "durationMs": 800
+    },
+    {
+      "dexNumber": 43,
+      "id": "oddish",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/43.gif",
+      "sourceSha256": "a2233a0b5017ccceda8b30615053a68d693e4336b68dc5417bc444dbf5fedec7",
+      "frames": 56,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 44,
+      "id": "gloom",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/44.gif",
+      "sourceSha256": "0910a9376ad3f1ef82e4b8d10f53b9a5d1339ac1434982ba61f43d265823fda2",
+      "frames": 56,
+      "durationMs": 6900
+    },
+    {
+      "dexNumber": 45,
+      "id": "vileplume",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/45.gif",
+      "sourceSha256": "2854fc9345354a75cc689b6fdc2542ebb3338fbc608e5db7f673ec180ae3d8de",
+      "frames": 47,
+      "durationMs": 4800
+    },
+    {
+      "dexNumber": 46,
+      "id": "paras",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/46.gif",
+      "sourceSha256": "49decaf88584b95e1f55a4fabc5e9536bf9538b1b89a7773b6e1b89699adb1e6",
+      "frames": 37,
+      "durationMs": 5000
+    },
+    {
+      "dexNumber": 47,
+      "id": "parasect",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/47.gif",
+      "sourceSha256": "9307b06dd401d3cff5a5e0636f77fdca327aab6374719d9d0ee6d80a65ccf8c8",
+      "frames": 37,
+      "durationMs": 4100
+    },
+    {
+      "dexNumber": 48,
+      "id": "venonat",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/48.gif",
+      "sourceSha256": "43fe6b2fd270a8a0fb5c02a555b0d1f2126bad1ebff3e60d924c45b5879689e0",
+      "frames": 50,
+      "durationMs": 5100
+    },
+    {
+      "dexNumber": 49,
+      "id": "venomoth",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/49.gif",
+      "sourceSha256": "f16cde5906e8e752a878356023b59d18a80848c969971edc4001419edf4cefbc",
+      "frames": 63,
+      "durationMs": 2720
+    },
+    {
+      "dexNumber": 50,
+      "id": "diglett",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/50.gif",
+      "sourceSha256": "9812353bb573d3239c5cb71be7eb478e1b5f050731ef231dcf909467f26c788a",
+      "frames": 70,
+      "durationMs": 10800
+    },
+    {
+      "dexNumber": 51,
+      "id": "dugtrio",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/51.gif",
+      "sourceSha256": "fe0fb3b9860b9c3f515aaf187cf1336119881fefb844609af8d073b0317986fb",
+      "frames": 41,
+      "durationMs": 4300
+    },
+    {
+      "dexNumber": 52,
+      "id": "meowth",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/52.gif",
+      "sourceSha256": "dede7ee280546031a77a6e59c539b13f6b638b89ad5ab8d01b5214d35c5d2cd4",
+      "frames": 69,
+      "durationMs": 7100
+    },
+    {
+      "dexNumber": 53,
+      "id": "persian",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/53.gif",
+      "sourceSha256": "ae696ca904c153d15c82880dfd0aa9fb52b6501f90b735a6210a0e5e87f9be32",
+      "frames": 55,
+      "durationMs": 5700
+    },
+    {
+      "dexNumber": 54,
+      "id": "psyduck",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/54.gif",
+      "sourceSha256": "236d243cd1bbc26d11705f1ef410dea61da56241dcb15733bafc16825427835a",
+      "frames": 25,
+      "durationMs": 5400
+    },
+    {
+      "dexNumber": 55,
+      "id": "golduck",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/55.gif",
+      "sourceSha256": "d4ab7d0edd85dcbd777b9da9581db47586be17947d43794d25059f9828c7f3d0",
+      "frames": 40,
+      "durationMs": 4300
+    },
+    {
+      "dexNumber": 56,
+      "id": "mankey",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/56.gif",
+      "sourceSha256": "b167be1163b058c66b0febb04632619a83a06d250867ee003240b341413313bf",
+      "frames": 66,
+      "durationMs": 7000
+    },
+    {
+      "dexNumber": 57,
+      "id": "primeape",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/57.gif",
+      "sourceSha256": "c461a29811f5691333f38cfb14e8d35063d0d4d78347ae89adf063d522c8df3c",
+      "frames": 28,
+      "durationMs": 2900
+    },
+    {
+      "dexNumber": 58,
+      "id": "growlithe",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/58.gif",
+      "sourceSha256": "1347a3b6253ce224e87511762476d2638bbf162bfc45b3877958938412599b47",
+      "frames": 71,
+      "durationMs": 7200
+    },
+    {
+      "dexNumber": 59,
+      "id": "arcanine",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/59.gif",
+      "sourceSha256": "023daeb46e6e596f4654dbedcb5e18a343c016a1ac88d3ee6d34ffa5eb280fad",
+      "frames": 36,
+      "durationMs": 3800
+    },
+    {
+      "dexNumber": 60,
+      "id": "poliwag",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/60.gif",
+      "sourceSha256": "2dd2e9ebb411e2e645598d747918933efa2c244e1fe6e0c9b8df85de03aa481e",
+      "frames": 42,
+      "durationMs": 4200
+    },
+    {
+      "dexNumber": 61,
+      "id": "poliwhirl",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/61.gif",
+      "sourceSha256": "1bd7ccc1cd1f7bfca7c2c9acad3e51f5160aef3c3734772afe550ca4e17bcbe8",
+      "frames": 54,
+      "durationMs": 5500
+    },
+    {
+      "dexNumber": 62,
+      "id": "poliwrath",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/62.gif",
+      "sourceSha256": "89694d2cd5baac85d422b33b76bf21f12e9eea6cc41d8658fcf2d1663fd12645",
+      "frames": 55,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 63,
+      "id": "abra",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/63.gif",
+      "sourceSha256": "95185f23678f187065747600437a117a2006f4e64322c3c7c29250af5a144f95",
+      "frames": 56,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 64,
+      "id": "kadabra",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/64.gif",
+      "sourceSha256": "e28f325487d0c7ea848e50e30040ee1edc23432d21a772fe2fe65ac05582586e",
+      "frames": 60,
+      "durationMs": 7100
+    },
+    {
+      "dexNumber": 65,
+      "id": "alakazam",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/65.gif",
+      "sourceSha256": "78e88c1ba3743cdb843cea86336494f907c4f1f82dd393189cd5e8ca78614716",
+      "frames": 62,
+      "durationMs": 5160
+    },
+    {
+      "dexNumber": 66,
+      "id": "machop",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/66.gif",
+      "sourceSha256": "8289ed736817b0f82f657a5aa45eefd993cc244b74c3c57421eef5616f483bbb",
+      "frames": 86,
+      "durationMs": 8800
+    },
+    {
+      "dexNumber": 67,
+      "id": "machoke",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/67.gif",
+      "sourceSha256": "5aa24eec7ffc16d93d13eab6a7e1ccdc586a90ffbb44e1cf7615cb87da91df67",
+      "frames": 51,
+      "durationMs": 6300
+    },
+    {
+      "dexNumber": 68,
+      "id": "machamp",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/68.gif",
+      "sourceSha256": "3d705be586538b4103bc757b3d93513dc55ff06b63dddf4ef041f531bceb8232",
+      "frames": 59,
+      "durationMs": 8100
+    },
+    {
+      "dexNumber": 69,
+      "id": "bellsprout",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/69.gif",
+      "sourceSha256": "9ab11105a818c5e91301669f8fac715d6f118990afeb93af9c61112ce6d1ec78",
+      "frames": 63,
+      "durationMs": 6800
+    },
+    {
+      "dexNumber": 70,
+      "id": "weepinbell",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/70.gif",
+      "sourceSha256": "e4241ea0f5f12c32bbd5c6d076aa47db66b2f8e673b88a2537edfa14d1545420",
+      "frames": 56,
+      "durationMs": 6300
+    },
+    {
+      "dexNumber": 71,
+      "id": "victreebel",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/71.gif",
+      "sourceSha256": "3b9405ec2272948a231d63b33b4281822fadf25ad0c600e70a68de218c79ef9c",
+      "frames": 37,
+      "durationMs": 3800
+    },
+    {
+      "dexNumber": 72,
+      "id": "tentacool",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/72.gif",
+      "sourceSha256": "b6357fa23320bc49f37c76500db78405c6e234d5b5de2b354795fdf6ab0a1b16",
+      "frames": 49,
+      "durationMs": 4900
+    },
+    {
+      "dexNumber": 73,
+      "id": "tentacruel",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/73.gif",
+      "sourceSha256": "d9de82b90e7d206f07efbf371d1c0e568c2c28fcd699562836e485d543bd3bfa",
+      "frames": 41,
+      "durationMs": 4100
+    },
+    {
+      "dexNumber": 74,
+      "id": "geodude",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/74.gif",
+      "sourceSha256": "da34c2238fcaf8d53438e566a7cf0636fcc7881f798af68619aa39747011963a",
+      "frames": 54,
+      "durationMs": 5500
+    },
+    {
+      "dexNumber": 75,
+      "id": "graveler",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/75.gif",
+      "sourceSha256": "0649ef31ebbae8ca708be7e9a573a21104d3e8c661503c479f4c14b5883575a4",
+      "frames": 24,
+      "durationMs": 3200
+    },
+    {
+      "dexNumber": 76,
+      "id": "golem",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/76.gif",
+      "sourceSha256": "bc41b5266991fd4d0176042cec09344ba1e30560f77679ed2db45f4a41245074",
+      "frames": 47,
+      "durationMs": 5000
+    },
+    {
+      "dexNumber": 77,
+      "id": "ponyta",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/77.gif",
+      "sourceSha256": "fbc9ba0c64d98238faccdccad513771f8a88ec96866af67e1271ca6c1a768f35",
+      "frames": 44,
+      "durationMs": 4900
+    },
+    {
+      "dexNumber": 78,
+      "id": "rapidash",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/78.gif",
+      "sourceSha256": "c90990d112a20fe4328b1373b025e8229cab76b583687f75e0faf0a0aaad7b4e",
+      "frames": 32,
+      "durationMs": 2160
+    },
+    {
+      "dexNumber": 79,
+      "id": "slowpoke",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/79.gif",
+      "sourceSha256": "96522d06d33f22914e2d2cde1a02e8ef4860377e9241dfa4aa270724f378b518",
+      "frames": 45,
+      "durationMs": 4700
+    },
+    {
+      "dexNumber": 80,
+      "id": "slowbro",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/80.gif",
+      "sourceSha256": "c419e5c2da7debadef92bf82900047dc3205dbd91b0334b8dcd13090f6f9f878",
+      "frames": 57,
+      "durationMs": 7700
+    },
+    {
+      "dexNumber": 81,
+      "id": "magnemite",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/81.gif",
+      "sourceSha256": "cc2a3e15dac222646fb1c7edacfe66dd1dddfaec3b39ce9befc25a056cc2f5cd",
+      "frames": 53,
+      "durationMs": 5600
+    },
+    {
+      "dexNumber": 82,
+      "id": "magneton",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/82.gif",
+      "sourceSha256": "52c311092e4978fc7d562d897ded531d50aae955c89c1e7057f6744080c3014f",
+      "frames": 73,
+      "durationMs": 7300
+    },
+    {
+      "dexNumber": 83,
+      "id": "farfetchd",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/83.gif",
+      "sourceSha256": "02d7890ff7504f367f144acb69893f4ea225f842deb70076f252fb54c2407ebe",
+      "frames": 33,
+      "durationMs": 4100
+    },
+    {
+      "dexNumber": 84,
+      "id": "doduo",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/84.gif",
+      "sourceSha256": "49e7c8400713081a5910a30053fc42266427e60ee0fef849206eb8082039bb88",
+      "frames": 95,
+      "durationMs": 10300
+    },
+    {
+      "dexNumber": 85,
+      "id": "dodrio",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/85.gif",
+      "sourceSha256": "5562944b0003a0f21567c43b30cb41d9d46210369ae8e9531c921542e830913a",
+      "frames": 78,
+      "durationMs": 5460
+    },
+    {
+      "dexNumber": 86,
+      "id": "seel",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/86.gif",
+      "sourceSha256": "70486f7637412309279e809e6c65782f99235cc0cda27668a40b2ee917361ac1",
+      "frames": 24,
+      "durationMs": 2600
+    },
+    {
+      "dexNumber": 87,
+      "id": "dewgong",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/87.gif",
+      "sourceSha256": "41d4df80b2aee75eb139faa22240d613d3dbb459647b4d40f6004f22e4f4621e",
+      "frames": 50,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 88,
+      "id": "grimer",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/88.gif",
+      "sourceSha256": "1ad80ee40b9e2efda1d56852631aa4967696fe079dd46241709428a41a09fa94",
+      "frames": 61,
+      "durationMs": 6100
+    },
+    {
+      "dexNumber": 89,
+      "id": "muk",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/89.gif",
+      "sourceSha256": "851fd13cf7a87a58bd00537f28d054f10777785b1ffa2753d1e59bf458a2c9f5",
+      "frames": 52,
+      "durationMs": 5500
+    },
+    {
+      "dexNumber": 90,
+      "id": "shellder",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/90.gif",
+      "sourceSha256": "b027ea455debf86dad5b746f1e0b7c09ee19e7a102cdb8dc3c13ab7c26bb4147",
+      "frames": 44,
+      "durationMs": 4500
+    },
+    {
+      "dexNumber": 91,
+      "id": "cloyster",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/91.gif",
+      "sourceSha256": "65d7ce07559e27a45c7990a98facd16ebb3014f91624859583159acdf0fd4fef",
+      "frames": 51,
+      "durationMs": 5100
+    },
+    {
+      "dexNumber": 92,
+      "id": "gastly",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/92.gif",
+      "sourceSha256": "3a4481e91eef77b99a643b423de4d924b939907a31216aa5a27bf62a1b7b9aed",
+      "frames": 56,
+      "durationMs": 5700
+    },
+    {
+      "dexNumber": 93,
+      "id": "haunter",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/93.gif",
+      "sourceSha256": "a69e1517170a6e74dca52f487081581607009a7134a3bf16d34c06cd170c4027",
+      "frames": 13,
+      "durationMs": 1400
+    },
+    {
+      "dexNumber": 94,
+      "id": "gengar",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/94.gif",
+      "sourceSha256": "a6abb74d994fbc18581c519bfe047743c9523c3a30898c48d3536c3f3f0683ad",
+      "frames": 37,
+      "durationMs": 4400
+    },
+    {
+      "dexNumber": 95,
+      "id": "onix",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/95.gif",
+      "sourceSha256": "e1903cd7d0ca6579b9f2efed7c181b28ed480afeccb4bb64b3f0a8a32a4762f8",
+      "frames": 50,
+      "durationMs": 5100
+    },
+    {
+      "dexNumber": 96,
+      "id": "drowzee",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/96.gif",
+      "sourceSha256": "d84c15eb7ca633b045aacd1159bc4cb02ef87db8b9cd05d3f7f2c78a958d8b7c",
+      "frames": 76,
+      "durationMs": 7700
+    },
+    {
+      "dexNumber": 97,
+      "id": "hypno",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/97.gif",
+      "sourceSha256": "59149b7640e854cb886f571338a63c56e113473716ad6e998f5aab27c7206b18",
+      "frames": 63,
+      "durationMs": 6400
+    },
+    {
+      "dexNumber": 98,
+      "id": "krabby",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/98.gif",
+      "sourceSha256": "ee4a5d2aec46d85458c46839359478b4f1d4d5aa2770d3739ff1a245f7875bfb",
+      "frames": 37,
+      "durationMs": 4300
+    },
+    {
+      "dexNumber": 99,
+      "id": "kingler",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/99.gif",
+      "sourceSha256": "d7a715bba26eb633acd606194739d10bab7728e2cde5dda1e66e5ffbdf9812c0",
+      "frames": 49,
+      "durationMs": 5800
+    },
+    {
+      "dexNumber": 100,
+      "id": "voltorb",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/100.gif",
+      "sourceSha256": "befe3e9cf8d8b21305e38e833b55fc86626f01464747a95ff3365e6bf0b0ed6d",
+      "frames": 37,
+      "durationMs": 4600
+    },
+    {
+      "dexNumber": 101,
+      "id": "electrode",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/101.gif",
+      "sourceSha256": "d769544c3595b0a194126cd91aa17eff468d0a8b84f0c70b7d2368afc80fbf76",
+      "frames": 29,
+      "durationMs": 4000
+    },
+    {
+      "dexNumber": 102,
+      "id": "exeggcute",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/102.gif",
+      "sourceSha256": "b52d00724954b8d4274bee24459ac89bcb92d471aa8d8b7b9f806e734e659c43",
+      "frames": 28,
+      "durationMs": 3700
+    },
+    {
+      "dexNumber": 103,
+      "id": "exeggutor",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/103.gif",
+      "sourceSha256": "a9a1d94de75f227dfa47bc521df3cc7a5423e6c78d5c35f2d833c89f2b74b1bb",
+      "frames": 45,
+      "durationMs": 4500
+    },
+    {
+      "dexNumber": 104,
+      "id": "cubone",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/104.gif",
+      "sourceSha256": "11c75dad64b4f2eb327dd03355928141ecf12ccfc7c6af59dd36087ac0291552",
+      "frames": 79,
+      "durationMs": 8400
+    },
+    {
+      "dexNumber": 105,
+      "id": "marowak",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/105.gif",
+      "sourceSha256": "a0bf6754c389ac252798360cf9c4578cdee781b0ade0b76ae6ca9563bf4cbe98",
+      "frames": 66,
+      "durationMs": 7200
+    },
+    {
+      "dexNumber": 106,
+      "id": "hitmonlee",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/106.gif",
+      "sourceSha256": "f668c1e07d63d780871bd02c6c56ff41df4b791c41e15bf134cb9eedddc46d0c",
+      "frames": 56,
+      "durationMs": 6300
+    },
+    {
+      "dexNumber": 107,
+      "id": "hitmonchan",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/107.gif",
+      "sourceSha256": "91ed36c1e96f97d774c200ff19b99c0ca4e1f902dcbfdaa057174f1c32571212",
+      "frames": 41,
+      "durationMs": 4600
+    },
+    {
+      "dexNumber": 108,
+      "id": "lickitung",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/108.gif",
+      "sourceSha256": "1a11c52e72dac3edd8cf61f54f5fcea10258e2cd3f9bcaef404e337dac05fde8",
+      "frames": 34,
+      "durationMs": 3700
+    },
+    {
+      "dexNumber": 109,
+      "id": "koffing",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/109.gif",
+      "sourceSha256": "e2fbc5afa842dfe94606451571814fac69cea94776b68fb87e432ecc161e34cc",
+      "frames": 44,
+      "durationMs": 4500
+    },
+    {
+      "dexNumber": 110,
+      "id": "weezing",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/110.gif",
+      "sourceSha256": "904802762503d4ccfdfb052a99c57a3cfbbaa8353df5c0cfe38019492d51e60a",
+      "frames": 50,
+      "durationMs": 5100
+    },
+    {
+      "dexNumber": 111,
+      "id": "rhyhorn",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/111.gif",
+      "sourceSha256": "3fddfbab7e25bcf6d432f330bf9320a0590ce7d41ae388444249990c967ef5d7",
+      "frames": 79,
+      "durationMs": 8500
+    },
+    {
+      "dexNumber": 112,
+      "id": "rhydon",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/112.gif",
+      "sourceSha256": "aaa7edf679559857a642b24880ad1b720e73bab55c9402b500b41192bf91cc30",
+      "frames": 97,
+      "durationMs": 10600
+    },
+    {
+      "dexNumber": 113,
+      "id": "chansey",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/113.gif",
+      "sourceSha256": "2ade36410b2e44eea9f227d839f8c7a1ecfe2e0f7324f7058508367a054013ef",
+      "frames": 60,
+      "durationMs": 6300
+    },
+    {
+      "dexNumber": 114,
+      "id": "tangela",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/114.gif",
+      "sourceSha256": "95d670e9a0bee79f3cd86b1379675515d1a57ef93ddfd7f6ea4b8bb606e1df8c",
+      "frames": 32,
+      "durationMs": 3200
+    },
+    {
+      "dexNumber": 115,
+      "id": "kangaskhan",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/115.gif",
+      "sourceSha256": "19a144930a5519f3c7799be28d140ec28c0b94d1be26c101d830170dc2644d57",
+      "frames": 127,
+      "durationMs": 13600
+    },
+    {
+      "dexNumber": 116,
+      "id": "horsea",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/116.gif",
+      "sourceSha256": "7169d3923e84bfe7196598b42d65019eee67ff55c8e03d7959f5b1e14bcb878e",
+      "frames": 41,
+      "durationMs": 4100
+    },
+    {
+      "dexNumber": 117,
+      "id": "seadra",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/117.gif",
+      "sourceSha256": "82f473859911196a9da9ef35237cebb06a1d16e03fca0fc8d2e09366b1fb1e93",
+      "frames": 32,
+      "durationMs": 3300
+    },
+    {
+      "dexNumber": 118,
+      "id": "goldeen",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/118.gif",
+      "sourceSha256": "93f72da829d40ad86e6b74d351536efa8fbfbc79e8cba553aca7005ed061e628",
+      "frames": 57,
+      "durationMs": 5800
+    },
+    {
+      "dexNumber": 119,
+      "id": "seaking",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/119.gif",
+      "sourceSha256": "a89ff42baad773357c2e00b506a404fed780363e2b0b8de35229f0057e3b5a90",
+      "frames": 48,
+      "durationMs": 4900
+    },
+    {
+      "dexNumber": 120,
+      "id": "staryu",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/120.gif",
+      "sourceSha256": "11971cc7702b584f39fe5806838f874ba9345cfec52a9a88d15ac4fd24900bb4",
+      "frames": 41,
+      "durationMs": 4300
+    },
+    {
+      "dexNumber": 121,
+      "id": "starmie",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/121.gif",
+      "sourceSha256": "3fe5efd394445cc291c44b4dfe79e144902040bf36764f2c6e17a0de7a687952",
+      "frames": 80,
+      "durationMs": 8100
+    },
+    {
+      "dexNumber": 122,
+      "id": "mr-mime",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/122.gif",
+      "sourceSha256": "571bebff4f53d32c54b702c1e400567300efc653fb2d7da11aae1ae7f0718b28",
+      "frames": 64,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 123,
+      "id": "scyther",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/123.gif",
+      "sourceSha256": "a5543625341528a6e2489c1a59d0026e7d1a790ecc1194a8cc6ea4406e9f88e1",
+      "frames": 69,
+      "durationMs": 7600
+    },
+    {
+      "dexNumber": 124,
+      "id": "jynx",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/124.gif",
+      "sourceSha256": "2f8a4e110532fa491823bfa472e6fa620b521fa20ca52bd20d01a01ad7dde593",
+      "frames": 54,
+      "durationMs": 5500
+    },
+    {
+      "dexNumber": 125,
+      "id": "electabuzz",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/125.gif",
+      "sourceSha256": "b976c477f2b663d12f9694b329dd253824461f61ca887761c5cc4955adf99d8b",
+      "frames": 48,
+      "durationMs": 4900
+    },
+    {
+      "dexNumber": 126,
+      "id": "magmar",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/126.gif",
+      "sourceSha256": "36d1550cfbd45c9761459db7a57f290b177e5249a5796b4cc4ebea833e738cb2",
+      "frames": 33,
+      "durationMs": 3300
+    },
+    {
+      "dexNumber": 127,
+      "id": "pinsir",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/127.gif",
+      "sourceSha256": "10368fe1f385b8bddd941e18abbc7a5799c24f0c8d65cd34a76a9c8dd181d18b",
+      "frames": 73,
+      "durationMs": 7300
+    },
+    {
+      "dexNumber": 128,
+      "id": "tauros",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/128.gif",
+      "sourceSha256": "dbd0cc8c0cfa241651e4690a65c335b7279700782a8304cfdcea0378551730e1",
+      "frames": 43,
+      "durationMs": 4800
+    },
+    {
+      "dexNumber": 129,
+      "id": "magikarp",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/129.gif",
+      "sourceSha256": "5f6e78759fc026bdc081aec637909c0a5e78981c251529ad2997dcdfd8ca80c8",
+      "frames": 60,
+      "durationMs": 6000
+    },
+    {
+      "dexNumber": 130,
+      "id": "gyarados",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/130.gif",
+      "sourceSha256": "aabf473658eb23dc43e546d0483c4cfcb3af6748dece6826ac8fcace42547e61",
+      "frames": 45,
+      "durationMs": 4500
+    },
+    {
+      "dexNumber": 131,
+      "id": "lapras",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/131.gif",
+      "sourceSha256": "7afeddf87a578e26555a57743fdc95fec0e70cae15cae46a5c75ef7d9ef8bede",
+      "frames": 33,
+      "durationMs": 4300
+    },
+    {
+      "dexNumber": 132,
+      "id": "ditto",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/132.gif",
+      "sourceSha256": "a5a2affd970a6e87b83f565814aab909d51257d9b4ee6c201c83c37a3d64149d",
+      "frames": 41,
+      "durationMs": 4200
+    },
+    {
+      "dexNumber": 133,
+      "id": "eevee",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
+      "sourceSha256": "cc9ebb27b89737099672aaf47fc47167c26725db720def18d26aa66190caf17b",
+      "frames": 63,
+      "durationMs": 6700
+    },
+    {
+      "dexNumber": 134,
+      "id": "vaporeon",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/134.gif",
+      "sourceSha256": "228bdf663cbea3fba81d10b75cab2d5a653d19cafc57444ff657f0e3f3622c01",
+      "frames": 51,
+      "durationMs": 8200
+    },
+    {
+      "dexNumber": 135,
+      "id": "jolteon",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/135.gif",
+      "sourceSha256": "34ecc1ab8d6055a811fd2344fe40eecb9cccb71bf7af53feeb3bf5d6aaff5bdf",
+      "frames": 50,
+      "durationMs": 5100
+    },
+    {
+      "dexNumber": 136,
+      "id": "flareon",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/136.gif",
+      "sourceSha256": "ca5e46d2880bff2791ab711712030ea7bd924b6d7feb459b3eb7b783832f0d4e",
+      "frames": 60,
+      "durationMs": 6200
+    },
+    {
+      "dexNumber": 137,
+      "id": "porygon",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/137.gif",
+      "sourceSha256": "d0a8b8a9ac2af1c9e21f7ccb22023b0cbb917519eaeb6445646142dffbe3362b",
+      "frames": 30,
+      "durationMs": 3200
+    },
+    {
+      "dexNumber": 138,
+      "id": "omanyte",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/138.gif",
+      "sourceSha256": "0a900c279207437dd9ce0260218e93780489e2489b13a3237aeb8f5f64f9194a",
+      "frames": 34,
+      "durationMs": 3400
+    },
+    {
+      "dexNumber": 139,
+      "id": "omastar",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/139.gif",
+      "sourceSha256": "500ee42382870139dfa6b960b89dea903c680b46a30f9df32bd4a71d686c4ccd",
+      "frames": 78,
+      "durationMs": 7800
+    },
+    {
+      "dexNumber": 140,
+      "id": "kabuto",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/140.gif",
+      "sourceSha256": "7dc6adefc1874a8e51be4052f6143bc834e58cb5057727c7b4aa719ec9b577ed",
+      "frames": 34,
+      "durationMs": 3400
+    },
+    {
+      "dexNumber": 141,
+      "id": "kabutops",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/141.gif",
+      "sourceSha256": "a4416c5c8da7f3f67dfaac76b2e427a2d3078fedf09dbd6b28438b41124a15dc",
+      "frames": 23,
+      "durationMs": 2500
+    },
+    {
+      "dexNumber": 142,
+      "id": "aerodactyl",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/142.gif",
+      "sourceSha256": "8612b89b84cbdfcbfa708d58e1295ae4442c8c05be199c4d8ad7a59714a1194d",
+      "frames": 10,
+      "durationMs": 1000
+    },
+    {
+      "dexNumber": 143,
+      "id": "snorlax",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/143.gif",
+      "sourceSha256": "e683340745db17b15a5c5d1844d0930e8103844ddf194bcc517a75b6d4f23991",
+      "frames": 86,
+      "durationMs": 9000
+    },
+    {
+      "dexNumber": 144,
+      "id": "articuno",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/144.gif",
+      "sourceSha256": "07f2e42d01378f49e8903d1fef5e0cf69d08dc2082c1235eb721129b96908985",
+      "frames": 29,
+      "durationMs": 5200
+    },
+    {
+      "dexNumber": 145,
+      "id": "zapdos",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/145.gif",
+      "sourceSha256": "fa82639c4a93f4734a1513af472ccc79068fb4076405933c4a65f2535887b054",
+      "frames": 9,
+      "durationMs": 900
+    },
+    {
+      "dexNumber": 146,
+      "id": "moltres",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/146.gif",
+      "sourceSha256": "c2f4dc5a7e40add625cd5d094630d495db1107954448843007ea498aa2182be6",
+      "frames": 27,
+      "durationMs": 2700
+    },
+    {
+      "dexNumber": 147,
+      "id": "dratini",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/147.gif",
+      "sourceSha256": "fb30455032070b08d3d223169c6d398b2ba3c2674411af27deae2e747ae4570f",
+      "frames": 25,
+      "durationMs": 3100
+    },
+    {
+      "dexNumber": 148,
+      "id": "dragonair",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/148.gif",
+      "sourceSha256": "f23d6753191de844659cb885e76ea061df337a85ab2f3cd7c7e82e8cf456f116",
+      "frames": 64,
+      "durationMs": 6500
+    },
+    {
+      "dexNumber": 149,
+      "id": "dragonite",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/149.gif",
+      "sourceSha256": "ea83358260bf2f2081c30b15c11f94cb7debd3f01cd724a9066d3bab5c8043e3",
+      "frames": 51,
+      "durationMs": 6200
+    },
+    {
+      "dexNumber": 150,
+      "id": "mewtwo",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/150.gif",
+      "sourceSha256": "2c3040b479aa48dfcac4bec578ce06ebdd63123f0a4307de8267e77fab85bd32",
+      "frames": 64,
+      "durationMs": 6900
+    },
+    {
+      "dexNumber": 151,
+      "id": "mew",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/c0542f7c51215d9672439012838c99f520596cbd/sprites/pokemon/versions/generation-v/black-white/animated/151.gif",
+      "sourceSha256": "6e40f8201fe2542718cd4a3a2b08aa51218a3e4b078d3b1f27abb29ff2245b44",
+      "frames": 60,
+      "durationMs": 6500
+    }
+  ]
+}
